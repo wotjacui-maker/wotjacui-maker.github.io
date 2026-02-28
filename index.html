@@ -17,7 +17,8 @@
 	<div class="top">
 		<div class="hover-text"><img class="smallimg"src="cithree.png"></div>
 	</div>
-	<div class="middle">
+
+	<div class="middle inner">
 		<a class="link-backpacking" href="backpacking/index.html"><img src="backpacking.png"></a>
 		
 		<a class="link-me" href="me/index.html"><img src="plant.png"></a>
@@ -30,13 +31,14 @@
 
 		<a class="link-reading" href="reading/index.html"><img src="books.PNG"></a>
 	</div>
-	<div class="bottom">
 
+	<div class="bottom">
+		<p class="none">click img!</p>
 	</div>
 
 	<script>
 		var hoverText = document.querySelector('.hover-text');
-		var defaultText = '';
+		var defaultContent = '<img src="cithree.png">';
 		var texts = {
 			'link-backpacking': 'do you like backpacking?',
 			'link-me': 'me - 왜 책방을..?',

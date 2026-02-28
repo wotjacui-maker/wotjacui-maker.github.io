@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>bookshopletsgo</title>
+	<meta name="description" content="설명">
+	<meta name="keywords" content="키워드1, 키워드2">
+	<meta property="og:image" content="">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" type="image/png" href="">
+
+</head>
+<body>
+
+
+	<div class="top">
+		<div class="hover-text"><img class="smallimg"src="cithree.png"></div>
+	</div>
+	<div class="middle">
+		<a class="link-backpacking" href="backpacking/index.html"><img src="backpacking.png"></a>
+		
+		<a class="link-me" href="me/index.html"><img src="plant.png"></a>
+		
+		<a class="link-calendar" href="calendar/index.html"><img src="chicken.png"></a>
+
+		<a class="link-layout" href="layout/index.html"><img src="layout.png"></a>
+
+		<a class="link-letter" href="tableforseo/index.html"><img src="letter.PNG"></a>
+
+		<a class="link-reading" href="reading/index.html"><img src="books.PNG"></a>
+	</div>
+	<div class="bottom">
+
+	</div>
+
+	<script>
+		var hoverText = document.querySelector('.hover-text');
+		var defaultText = '';
+		var texts = {
+			'link-backpacking': 'do you like backpacking?',
+			'link-me': 'me - 왜 책방을..?',
+			'link-layout': '내 서점은 이렇게 생겼을 수도 있고',
+			'link-calendar': 'family calendar',
+			'link-letter': '편지들이 있어요',
+			'link-reading': '지금 읽고 있는 책들'
+		};
+
+		document.querySelectorAll('.middle a').forEach(function(link) {
+			link.addEventListener('mouseenter', function() {
+				hoverText.textContent = texts[this.className] || defaultText;
+			});
+		});
+
+		document.querySelector('.middle').addEventListener('mouseleave', function() {
+			hoverText.textContent = defaultText;
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+		*{
+ margin : 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+@font-face {
+  font-family: menlo;
+  src: url(Menlo.ttc);
+}
+
+        
+    body {
+            overflow: hidden;
+
+            font-size: 8pt;
+            font-family: menlo;
+        }
+
+
+        .top {
+        	position: absolute;
+            background-color: rgb(255, 253, 155);
+            width: 100%;
+            height: 30%;
+            overflow-y: hidden;
+            display: flex;    
+            flex-direction: column;   /* 세로 방향 */
+            justify-content: flex-end; /* 아래쪽으로 붙이기 */
+            align-items: center;         
+        }
+
+        .text {
+            display: none;
+        }
+
+        .hover-text {
+            display: block;
+        }
+
+        .middle {
+        	position: absolute;
+            background-color:  rgb(255, 253, 155);
+            top: 30%;
+            width: 100%;
+            height: 40%;
+            overflow-x: auto;
+            overflow-y: hidden;
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .bottom {
+        	position: absolute;
+            background-color:  rgb(255, 253, 155);
+            top: 70%;
+            width: 100%;
+            height: 30%;
+            overflow-y: hidden;
+        }
+
+    img {
+        	height: 80px;
+            flex-shrink: 0;
+            margin: 30px;
+        }
+
+        .smallimg {
+            width: 50px;
+            height: auto;
+       
+        }
+
+        /* chicken 이미지만 작게, 비율 유지 (height만 쓰면 짜부되니까 object-fit 사용) */
+        .link-calendar img {
+            width: 50px;
+            height: 100px;
+            object-fit: contain;
+        }
+
+        .link-letter img {
+        
+            height: 80px;
+            object-fit: contain;
+        }
+
+
+
+a:visited {
+	
+
+}
+
+a:hover {
+	
+}
+
+
+
+@media screen and (max-width: 704px) {
+
+}
